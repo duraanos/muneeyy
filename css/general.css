@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--muneeyy-font-size);
+}
+
+body {
+  font-family: var(--muneeyy-font-family);
+  font-weight: var(--muneeyy-font-weight);
+  background-color: var(--muneeyy-background-color);
+  line-height: var(--muneeyy-line-height);
+  color: var(--muneeyy-color);
+}
+
+.container {
+  border: 2px solid var(--muneeyy-border);
+  max-width: 40rem;
+  padding: 2rem;
+  margin: 10rem auto;
+}
