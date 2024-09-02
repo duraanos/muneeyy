@@ -1,3 +1,10 @@
+:root{
+  --muneeyy-font-family: 'Montserrat', sans-serif;
+  --muneeyy-font-weight: 400;
+  --muneeyy-line-height: 1;
+  --muneeyy-font-size : 62.5%;
+}
+
 :root {
   --muneeyy-background-color: #f3f8f0;
   --muneeyy-color: #28381e;
