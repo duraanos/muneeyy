@@ -17,9 +17,10 @@
 }
 
 .balances {
-  background-color: var(--muneeyy-color);
+  background-color: var(--muneeyy-primary-color);
   color: var(--muneeyy-background-color);
   border-radius: 5px;
+  margin-bottom: 1.5rem;
 }
 
 .total-balance,
@@ -46,4 +47,29 @@
 .income p,
 .expense p {
   font-size: 2rem;
+}
+
+.transaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.transactions h2 {
+  margin-bottom: 1.5rem;
+}
+
+.transaction p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0 1.5rem;
+}
+
+.transaction p:nth-child(2) {
+  color: var(--muneeyy-secondary-color);
+}
+
+.transaction + span {
+  padding-left: 1.5rem;
 }
