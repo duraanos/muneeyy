@@ -19,6 +19,7 @@
 .balances {
   background-color: var(--muneeyy-color);
   color: var(--muneeyy-background-color);
+  border-radius: 5px;
 }
 
 .total-balance,
