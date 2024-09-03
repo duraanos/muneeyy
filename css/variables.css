@@ -1,14 +1,14 @@
-:root{
+:root {
   --muneeyy-font-family: 'Montserrat', sans-serif;
   --muneeyy-font-weight: 400;
   --muneeyy-line-height: 1;
-  --muneeyy-font-size : 62.5%;
+  --muneeyy-font-size: 62.5%;
 }
 
 :root {
-  --muneeyy-background-color: #DAEBD1;
+  --muneeyy-background-color: #daebd1;
   --muneeyy-primary-color: #28381e;
-  --muneeyy-secondary-color: #85BB65;
-  --muneeyy-tertiary-color: #C2DDB2;
-  --muneeyy-border: #28381e; 
+  --muneeyy-secondary-color: #85bb65;
+  --muneeyy-tertiary-color: #cee4c1;
+  --muneeyy-border: #28381e;
 }
