@@ -15,3 +15,34 @@
 .main-title p {
   font-size: 1.6rem;
 }
+
+.balances {
+  background-color: var(--muneeyy-color);
+  color: var(--muneeyy-background-color);
+}
+
+.total-balance,
+.income,
+.expense {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  font-weight: 700;
+}
+
+.total-balance p {
+  font-size: 3rem;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-around;
+}
+
+.income p,
+.expense p {
+  font-size: 2rem;
+}
