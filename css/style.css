@@ -56,8 +56,10 @@
   margin-bottom: 0.5rem;
 }
 
-.transactions h2 {
-  margin-bottom: 1.5rem;
+.transactions h2,
+.add-transactions h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .transaction p {
@@ -72,4 +74,27 @@
 
 .transaction + span {
   padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.transaction-bar {
+  background-color: var(--muneeyy-tertiary-color);
+  border-radius: 5px;
+}
+
+.transaction-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+}
+
+.transaction-bar button {
+  color: var(--muneeyy-background-color);
+  background-color: var(--muneeyy-primary-color);
+  padding: 1rem 5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
 }
