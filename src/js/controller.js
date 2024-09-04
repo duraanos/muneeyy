@@ -9,9 +9,9 @@ const transactionName = document.querySelector('.transaction p:nth-child(1)');
 const transactionAmount = document.querySelector('.transaction p:nth-child(2)');
 const transactionDate = document.querySelector('span');
 
-const inputName = document.querySelector('.name input');
-const inputAmount = document.querySelector('.amount input');
-const inputDate = document.querySelector('.date input');
+const inputName = document.querySelector('input[type="text"]');
+const inputAmount = document.querySelector('input[type="number"]');
+const inputDate = document.querySelector('input[type="date"]');
 
 const btnIncome = document.querySelector('.btn-income');
 const btnExpense = document.querySelector('.btn-expense');
