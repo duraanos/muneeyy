@@ -4,6 +4,7 @@ const totalBalance = document.querySelector('.total-balance p');
 const income = document.querySelector('.income p');
 const expense = document.querySelector('.expense p');
 
+const transactionContainer = document.querySelector('.transactions');
 const transactionName = document.querySelector('.transaction p:nth-child(1)');
 const transactionAmount = document.querySelector('.transaction p:nth-child(2)');
 const transactionDate = document.querySelector('span');
