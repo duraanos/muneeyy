@@ -50,6 +50,10 @@
 }
 
 .transaction {
+  margin-bottom: 1.5rem;
+}
+
+.name-amount {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,9 +79,9 @@ form,
   color: var(--muneeyy-secondary-color);
 }
 
-.transaction + span {
+.name-amount + span {
   padding-left: 1.5rem;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 
 .transaction-bar {
