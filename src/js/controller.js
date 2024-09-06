@@ -5,6 +5,7 @@ const income = document.querySelector('.income p');
 const expense = document.querySelector('.expense p');
 
 const transactionContainer = document.querySelector('.transactions');
+const transactionForm = document.querySelector('form');
 const transactionName = document.querySelector('.transaction p:nth-child(1)');
 const transactionAmount = document.querySelector('.transaction p:nth-child(2)');
 const transactionDate = document.querySelector('span');
@@ -15,7 +16,6 @@ const inputDate = document.querySelector('input[type="date"]');
 
 const btnIncome = document.querySelector('.btn-income');
 const btnExpense = document.querySelector('.btn-expense');
-const btnSubmit = document.querySelector('button[type="submit"]');
 
 const capitalize = str => str[0].toUpperCase() + str.slice(1);
 
@@ -48,4 +48,4 @@ const renderTransaction = function (e) {
   inputDate.value = '';
 };
 
-btnSubmit.addEventListener('submit', renderTransaction);
+transactionForm.addEventListener('submit', renderTransaction);
