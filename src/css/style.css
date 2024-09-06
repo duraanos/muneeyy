@@ -120,3 +120,14 @@ button[type='submit'] {
   width: 100%;
   font-weight: 700;
 }
+
+button:not([type='submit']) {
+  border: 2px solid var(--muneeyy-primary-color);
+  background-color: var(--muneeyy-tertiary-color);
+  color: var(--muneeyy-primary-color);
+}
+
+button.selected {
+  background-color: var(--muneeyy-primary-color);
+  color: var(--muneeyy-background-color);
+}
