@@ -31,7 +31,7 @@ label {
   margin-bottom: 0.5rem;
 }
 
-input {
+input:not(#type) {
   box-sizing: border-box;
   background-color: var(--muneeyy-tertiary-color);
   outline: none;
