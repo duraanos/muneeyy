@@ -14,9 +14,6 @@ const inputName = document.querySelector('input[type="text"]');
 const inputAmount = document.querySelector('.amount input');
 const inputDate = document.querySelector('input[type="date"]');
 
-const btnIncome = document.querySelector('.btn-income');
-const btnExpense = document.querySelector('.btn-expense');
-
 const capitalize = str => str[0].toUpperCase() + str.slice(1);
 
 const currencyFormatter = new Intl.NumberFormat('en-US', {
