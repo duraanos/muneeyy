@@ -37,40 +37,32 @@
         </div>
         <h2>Transactions</h2>
         <div class="transactions">
-          <!-- <div class="transaction">
-            <div class="name-amount">
-              <p>Salary</p>
-              <p>+$5.000.00</p>
-            </div>
-            <span>03/09/24</span>
-          </div> -->
         </div>
-        <div class="add-transactions">
-          <h2>Add Transaction</h2>
-          <div class="transaction-bar">
-            <div class="transaction-option">
-              <button class="btn-income">INCOME</button>
-              <button class="btn-expense selected">EXPENSE</button>
+        <h2>Add Transaction</h2>
+        <form>
+          <label for="type">
+            <input type="checkbox" name="type" id="type"/>
+            <div class="option">
+              <span>INCOME</span>
+              <span>EXPENSE</span>
+            </div>
+          </label>
+          <div class="name">
+            <label for="name">NAME</label>
+            <input type="text" name="name" required />
+          </div>
+          <div class="amount-date">
+            <div class="amount">
+              <label for="amount">AMOUNT</label>
+              <input type="number" name="amount" min="0" required />
+            </div>
+            <div class="date">
+              <label for="date">DATE</label>
+              <input type="date" name="date" required />
             </div>
           </div>
-          <form>
-            <div class="name">
-              <label for="name">NAME</label>
-              <input type="text" name="name" required />
-            </div>
-            <div class="amount-date">
-              <div class="amount">
-                <label for="amount">AMOUNT</label>
-                <input type="number" name="amount" min="0" required />
-              </div>
-              <div class="date">
-                <label for="date">DATE</label>
-                <input type="date" name="date" required />
-              </div>
-            </div>
-            <button type="submit">SUBMIT</button>
-          </form>
-        </div>
+          <button type="submit">SUBMIT</button>
+        </form>
       </div>
     </main>
   </body>
