@@ -6,9 +6,6 @@ const expense = document.querySelector('.expense p');
 
 const transactionContainer = document.querySelector('.transactions');
 const transactionForm = document.querySelector('form');
-const transactionName = document.querySelector('.transaction p:nth-child(1)');
-const transactionAmount = document.querySelector('.transaction p:nth-child(2)');
-const transactionDate = document.querySelector('span');
 
 const inputName = document.querySelector('input[type="text"]');
 const inputAmount = document.querySelector('.amount input');
