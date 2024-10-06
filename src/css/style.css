@@ -53,6 +53,13 @@
   margin-bottom: 1.5rem;
 }
 
+.transaction-amount.income {
+  color: var(--muneeyy-secondary-color);
+}
+.transaction-amount.expense {
+  color: var(--muneeyy-quaternary-color);
+}
+
 .name-amount {
   display: flex;
   align-items: center;
