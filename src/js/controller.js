@@ -3,7 +3,6 @@
 const balance = document.querySelector('.total-balance p');
 const income = document.querySelector('.income p');
 const expense = document.querySelector('.expense p');
-const message = document.querySelector('.status');
 
 const transactionContainer = document.querySelector('.transactions');
 const transactionForm = document.querySelector('form');
