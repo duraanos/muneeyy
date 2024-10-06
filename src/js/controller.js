@@ -13,14 +13,13 @@ const inputDate = document.querySelector('input[type="date"]');
 
 const capitalize = str => str[0].toUpperCase() + str.slice(1);
 
+const transactions = [];
 const currencyFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
 });
 
-const renderTransaction = function (e) {
-  e.preventDefault();
-
+const renderTransaction = function () {
   const name = inputName.value;
   const amount = +inputAmount.value;
   const currFormat = currencyFormatter.format(+inputAmount.value);
@@ -42,4 +41,20 @@ const renderTransaction = function (e) {
   inputDate.value = '';
 };
 
-transactionForm.addEventListener('submit', renderTransaction);
+const addTransaction = function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+
+  transactions.push({
+    id: transactions.length + 1,
+    name: formData.get('name'),
+    amount: formData.get('amount'),
+    date: new Date(formData.get('date')),
+    type: 'on' === formData.get('type') ? 'expense' : 'income',
+  });
+
+  renderTransaction();
+};
+
+transactionForm.addEventListener('submit', addTransaction);
