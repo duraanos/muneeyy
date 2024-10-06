@@ -63,6 +63,9 @@ const renderTransaction = function () {
     `;
 
     transactionContainer.insertAdjacentHTML('beforeend', transaction);
+    inputName.value = '';
+    inputAmount.value = '';
+    inputDate.value = '';
   });
 };
 
