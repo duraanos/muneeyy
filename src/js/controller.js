@@ -7,6 +7,10 @@ const expense = document.querySelector('.expense p');
 const transactionContainer = document.querySelector('.transactions');
 const transactionForm = document.querySelector('form');
 
+const inputName = document.querySelector('input[type="text"]');
+const inputAmount = document.querySelector('.amount input');
+const inputDate = document.querySelector('input[type="date"]');
+
 const transactions = JSON.parse(localStorage.getItem('transactions')) || [];
 
 const currencyFormatter = new Intl.NumberFormat('en-US', {
