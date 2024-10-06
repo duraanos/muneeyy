@@ -49,10 +49,6 @@
   font-size: 2rem;
 }
 
-.transaction {
-  margin-bottom: 1.5rem;
-}
-
 .transaction-amount.income {
   color: var(--muneeyy-secondary-color);
 }
