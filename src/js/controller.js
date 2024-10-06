@@ -1,6 +1,6 @@
 'use strict';
 
-const totalBalance = document.querySelector('.total-balance p');
+const balance = document.querySelector('.total-balance p');
 const income = document.querySelector('.income p');
 const expense = document.querySelector('.expense p');
 
@@ -18,6 +18,22 @@ const currencyFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
 });
+
+const updateBalances = function () {
+  const incomeBalance = transactions
+    .filter(income => income.type === 'income')
+    .reduce((total, income) => total + income.amount, 0);
+
+  const expenseBalance = transactions
+    .filter(expense => expense.type === 'expense')
+    .reduce((total, expense) => total + expense.amount, 0);
+
+  const totalBalance = incomeBalance - expenseBalance;
+
+  balance.textContent = currencyFormatter.format(+totalBalance);
+  income.textContent = currencyFormatter.format(+incomeBalance);
+  expense.textContent = currencyFormatter.format(+expenseBalance * -1);
+};
 
 const renderTransaction = function () {
   const name = inputName.value;
@@ -55,6 +71,7 @@ const addTransaction = function (e) {
   });
 
   renderTransaction();
+  updateBalances();
 };
 
 transactionForm.addEventListener('submit', addTransaction);
