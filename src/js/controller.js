@@ -3,7 +3,7 @@
 const balance = document.querySelector('.total-balance p');
 const income = document.querySelector('.income p');
 const expense = document.querySelector('.expense p');
-const status = document.querySelector('.status');
+const message = document.querySelector('.status');
 
 const transactionContainer = document.querySelector('.transactions');
 const transactionForm = document.querySelector('form');
@@ -42,8 +42,7 @@ const renderTransaction = function () {
   const currFormat = currencyFormatter.format(+inputAmount.value);
   const date = new Date(inputDate.value).toLocaleDateString();
 
-
-
+  
   const transaction = `
     <div class="transaction">
       <div class="name-amount">
