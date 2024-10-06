@@ -31,33 +31,40 @@ const updateBalances = function () {
 
   const totalBalance = incomeBalance - expenseBalance;
 
-  balance.textContent = `$${currencyFormatter.format(totalBalance).substring(1)}`;
+  balance.textContent = `$${currencyFormatter
+    .format(totalBalance)
+    .substring(1)}`;
   income.textContent = currencyFormatter.format(incomeBalance);
   expense.textContent = currencyFormatter.format(expenseBalance * -1);
 };
 
 const renderTransaction = function () {
-  const name = inputName.value;
-  const amount = +inputAmount.value;
-  const currFormat = currencyFormatter.format(+inputAmount.value);
-  const date = new Date(inputDate.value).toLocaleDateString();
+  transactionContainer.innerHTML = '';
 
-  
-  const transaction = `
+  transactions.forEach(({ name, amount, date, type }) => {
+    const sign = type === 'income' ? 1 : -1;
+
+    const transaction = `
     <div class="transaction">
       <div class="name-amount">
         <p>${capitalize(name)}</p>
-        <p class="transaction-amount">${amount < 0 ? '' : '+'}${currFormat}</p>
+        <div class="transaction-amount ${type}">
+          <p>${currencyFormatter.format(amount * sign)}</p>
+        </div>
       </div>
-      <span>${date}</span>
+      <span>${new Date(date).toLocaleDateString()}</span>
     </div>
     `;
 
-  transactionContainer.insertAdjacentHTML('beforeend', transaction);
-  inputName.value = '';
-  inputAmount.value = '';
-  inputDate.value = '';
+    transactionContainer.insertAdjacentHTML('beforeend', transaction);
+    inputName.value = '';
+    inputAmount.value = '';
+    inputDate.value = '';
+  });
 };
+
+renderTransaction();
+updateBalances();
 
 const addTransaction = function (e) {
   e.preventDefault();
