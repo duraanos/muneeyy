@@ -8,17 +8,14 @@ const message = document.querySelector('.status');
 const transactionContainer = document.querySelector('.transactions');
 const transactionForm = document.querySelector('form');
 
-const inputName = document.querySelector('input[type="text"]');
-const inputAmount = document.querySelector('.amount input');
-const inputDate = document.querySelector('input[type="date"]');
-
-const capitalize = str => str[0].toUpperCase() + str.slice(1);
-
 const transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+
 const currencyFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
 });
+
+const capitalize = str => str[0].toUpperCase() + str.slice(1);
 
 const saveTransaction = function () {
   transactions.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -63,9 +60,6 @@ const renderTransaction = function () {
     `;
 
     transactionContainer.insertAdjacentHTML('beforeend', transaction);
-    inputName.value = '';
-    inputAmount.value = '';
-    inputDate.value = '';
   });
 };
 
