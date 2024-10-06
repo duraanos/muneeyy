@@ -30,7 +30,7 @@ const updateBalances = function () {
 
   const totalBalance = incomeBalance - expenseBalance;
 
-  balance.textContent = currencyFormatter.format(totalBalance).substring(1);
+  balance.textContent = `$${currencyFormatter.format(totalBalance).substring(1)}`;
   income.textContent = currencyFormatter.format(incomeBalance);
   expense.textContent = currencyFormatter.format(expenseBalance * -1);
 };
