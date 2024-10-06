@@ -30,9 +30,9 @@ const updateBalances = function () {
 
   const totalBalance = incomeBalance - expenseBalance;
 
-  balance.textContent = currencyFormatter.format(+totalBalance);
-  income.textContent = currencyFormatter.format(+incomeBalance);
-  expense.textContent = currencyFormatter.format(+expenseBalance * -1);
+  balance.textContent = currencyFormatter.format(totalBalance).substring(1);
+  income.textContent = currencyFormatter.format(incomeBalance);
+  expense.textContent = currencyFormatter.format(expenseBalance * -1);
 };
 
 const renderTransaction = function () {
@@ -65,7 +65,7 @@ const addTransaction = function (e) {
   transactions.push({
     id: transactions.length + 1,
     name: formData.get('name'),
-    amount: formData.get('amount'),
+    amount: +formData.get('amount'),
     date: new Date(formData.get('date')),
     type: 'on' === formData.get('type') ? 'expense' : 'income',
   });
