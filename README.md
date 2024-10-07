@@ -11,3 +11,9 @@ https://github.com/user-attachments/assets/4dc5682e-0d41-41e0-bc8c-ab4683bd07da
 ## An explanation of where the project name come from
 
 The project name was inspired by Kenny's line "JUS’ GIVE ME MUNEEEEYYYYYYYY" while robbing a bank in Black Mirror Season 3 Episode 3 (Shut Up and Dance).
+
+## Features
+* Adding income
+* Adding expense
+* Ability to see income, expense, and total balance
+* Ability to see transactions even when the page is refreshed
