@@ -166,3 +166,6 @@ https://github.com/user-attachments/assets/c81ea277-701d-411f-8b5f-0e16a2425c3c
 ## Conclusion
 
 A personal finance app like an expense tracker is crucial for effectively managing your money. It allows users to track income and spending, offering real-time insights into their financial health. With built-in features such as a savings calculator and budgeting tools, this financial tracking app helps categorize expenses, monitor savings, and stay on top of financial goals. By simplifying financial planning and providing a comprehensive overview of cash flow, it promotes better decision-making and long-term financial stability. Whether for personal use or business, this app is a powerful tool for staying organized and disciplined with finances.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
