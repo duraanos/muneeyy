@@ -120,3 +120,41 @@ transactionForm.addEventListener('submit', addTransaction);
 ## Motivation
 
 Tracking your finances with an expense tracker can significantly boost your financial health. A personal finance app helps you stay on top of your spending, saving, and budgeting by offering tools like a savings calculator to monitor progress toward your financial goals. This financial tracking app empowers you to take control by visualizing where your money goes, setting budgets, and helping you make smarter decisions. Whether it’s managing daily expenses or planning long-term savings, each action in the app fosters a sense of accomplishment and keeps you motivated to improve your financial well-being.
+
+## Installation
+
+1. On GitHub.com, navigate to the main page of the repository
+2. Above the list of files, click <> **Code**
+
+![1](https://github.com/user-attachments/assets/6a04e43c-a384-4706-9985-5807f7dce0af)
+
+3. Copy the URL for the repository.
+
+   - To clone the repository using HTTPS, under "HTTPS", click
+
+   - To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click SSH, then click
+
+   - To clone a repository using GitHub CLI, click GitHub CLI, then click
+
+![2](https://github.com/user-attachments/assets/643b677c-5ef6-4a0b-a434-08d596790c57)
+
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type `git clone`, and then paste the URL you copied earlier.
+   ```
+   https://github.com/duraanos/muneeyy.git
+   ```
+7. Press **Enter** to create your local clone
+
+   ```bash
+
+   $ git clone https://github.com/duraanos/muneeyy.git
+   Cloning into 'muneeyy'...
+   remote: Enumerating objects: 374, done.
+   remote: Counting objects: 100% (172/172), done.
+   remote: Compressing objects: 100% (115/115), done.
+   remote: Total 374 (delta 75), reused 136 (delta 42), pack-reused 202 (from 1)
+   Receiving objects: 100% (374/374), 40.60 KiB | 415.00 KiB/s, done.
+   Resolving deltas: 100% (177/177), done.
+
+   ```
