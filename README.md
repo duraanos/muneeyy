@@ -2,3 +2,4 @@
 
 # Money Tracker Application with JavaScript
 
+Money Tracker is an intuitive expense tracker and personal finance app designed to streamline your financial management. Effortlessly record income and expenses, categorize transactions, and track your overall financial health. Use the built-in savings calculator to set and monitor savings goals, and visualize your progress through detailed charts. This comprehensive financial tracking app helps you stay on top of your budget and spending, ensuring you're always in control of your finances.
