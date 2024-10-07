@@ -158,3 +158,7 @@ Tracking your finances with an expense tracker can significantly boost your fina
    Resolving deltas: 100% (177/177), done.
 
    ```
+
+## Usage
+
+https://github.com/user-attachments/assets/c81ea277-701d-411f-8b5f-0e16a2425c3c
