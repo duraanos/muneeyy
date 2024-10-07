@@ -116,3 +116,7 @@ const addTransaction = function (e) {
 
 transactionForm.addEventListener('submit', addTransaction);
 ```
+
+## Motivation
+
+Tracking your finances with an expense tracker can significantly boost your financial health. A personal finance app helps you stay on top of your spending, saving, and budgeting by offering tools like a savings calculator to monitor progress toward your financial goals. This financial tracking app empowers you to take control by visualizing where your money goes, setting budgets, and helping you make smarter decisions. Whether it’s managing daily expenses or planning long-term savings, each action in the app fosters a sense of accomplishment and keeps you motivated to improve your financial well-being.
